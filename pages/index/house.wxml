@@ -1,0 +1,51 @@
+<!--pages/index/house.wxml-->
+<view class="page">
+  <view class='banner'>
+    <image src='{{banner}}' class='banner'></image>
+  </view>
+  <view class='content'>
+    <view class='title text-left'>{{title}}</view>
+    <view class='title font-small gray'>
+      <navigator url="https://www.douban.com/people/doubanshudian/" >来源：豆瓣</navigator>
+    </view>
+    <view class='summary font-normal gray'>{{summary}}</view>
+  </view>
+  <view class='detail-list'>
+    <block wx:for="{{detail}}" wx:key="*this">
+    <view class='detail-item'>
+      <view class='detail-content'>
+        <view class='detail-cover'>
+          <image src='{{item.cover}}' class='cover'></image>
+        </view>
+        <view class='detail-desc'>
+          <text class='detail-txt'>{{item.title}}</text>
+          <text class='detail-txt font-small gray'>豆瓣评分：{{item.score}} 分</text>
+          <text class='detail-txt font-small gray'>{{item.author}}</text>
+          <text class='detail-txt font-small gray'>{{item.publisher}}</text>
+          <!-- <text class='detail-txt font-small gray'>{{item.years}}</text> -->
+        </view>
+      </view>
+      <view class='detail-tips gray font-small'>
+        <text class='orange'>推荐理由：</text>{{item.desc}}
+      </view>
+    </view>
+    </block>
+  </view>
+  <view class='recommed'>推荐专题</view>
+  <block wx:for="{{booklist}}" wx:key="*this">
+      <navigator url="detail?id={{item.id}}" >
+      <view class='list-item'>
+        <text class='triangle'></text>
+        <text class='new'>新</text>
+        <view class='list-title'>{{item.title}}</view>
+        <view class='list-subtitle'>{{item.subtitle}}</view>
+        <view class='list-thumbs'>
+          <image src='{{item.thumb[0].img}}' class='list-thumb'></image>
+          <image src='{{item.thumb[1].img}}' class='list-thumb'></image>
+          <image src='{{item.thumb[2].img}}' class='list-thumb'></image>
+          <text class='list-discount'>{{item.discount}}</text>
+        </view>
+      </view>
+      </navigator>
+  </block>
+</view>  

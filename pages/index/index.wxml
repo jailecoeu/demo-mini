@@ -1,0 +1,44 @@
+<view class="page">
+   <!-- <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="100%" height="150"/>
+        <view ></view>
+      </swiper-item>
+    </block>
+  </swiper>   -->
+
+  <view class="list"> 
+    <block wx:for="{{frontend}}" wx:key="*this">
+      <navigator url="frontend" >
+      <view class='list-item'>
+        <text class='triangle'></text>
+        <text class='new'>新</text>
+        <view class='list-title'>{{item.title}}</view>
+        <view class='list-subtitle'>{{item.subtitle}}</view>
+        <view class='list-thumbs'>
+          <image src='{{item.thumb[0].img}}' class='list-thumb'></image>
+          <image src='{{item.thumb[1].img}}' class='list-thumb'></image>
+          <image src='{{item.thumb[2].img}}' class='list-thumb'></image>
+          <text class='list-discount'>{{item.discount}}</text>
+        </view>
+      </view>
+      </navigator>
+    </block>   
+    <block wx:for="{{design}}" wx:key="*this">
+      <navigator url="design?id={{item.id}}" >
+      <view class='list-item'>
+        <view class='list-title'>{{item.title}}</view>
+        <view class='list-subtitle'>{{item.subtitle}}</view>
+        <view class='list-thumbs'>
+          <image src='{{item.thumb[0].img}}' class='list-thumb'></image>
+          <image src='{{item.thumb[1].img}}' class='list-thumb'></image>
+          <image src='{{item.thumb[2].img}}' class='list-thumb'></image>
+          <text class='list-discount'>{{item.discount}}</text>
+        </view>
+      </view>
+      </navigator>
+    </block>   
+  </view>  
+</view> 

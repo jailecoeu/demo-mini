@@ -1,0 +1,9 @@
+<template name="cityList">
+    <block wx:for="{{cities}}" wx:key="">
+        <view class='item'>
+          <view class='title'>{{item.title}}</view>
+          <view class='content'>{{item.content}}</view>
+          <image class='image' src='{{item.src}}'></image>
+        </view>
+    </block>
+</template>

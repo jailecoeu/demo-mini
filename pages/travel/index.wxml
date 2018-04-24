@@ -1,0 +1,19 @@
+<!--pages/travel/index.wxml-->
+ <view class="page">
+    <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150"/>
+      </swiper-item>
+    </block>
+  </swiper>  
+    <view class="page__bd">
+        <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__bd">
+              <import src="../template/travelListTpl.wxml"/>
+              <template is="travelList" data="{{travels}}"/>
+            </view>
+        </view>
+    </view>
+</view> 

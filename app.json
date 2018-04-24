@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/index/design",
+    "pages/index/house",
+    "pages/travel/index",
+    "pages/travel/france",
+    "pages/website/index",
+    "pages/index/frontend"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#9266f9",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "box-shadow": "0 0 6px 0",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/icon/book1.png",
+        "selectedIconPath": "images/icon/book1-fill.png",
+        "text": "Books"
+      },
+      {
+        "pagePath": "pages/website/index",
+        "iconPath": "images/icon/flag.png",
+        "selectedIconPath": "images/icon/flag-fill.png",
+        "text": "Websites"
+      },
+      {
+        "pagePath": "pages/travel/index",
+        "iconPath": "images/icon/global.png",
+        "selectedIconPath": "images/icon/global-fill.png",
+        "text": "Travel"
+      }
+      
+    ]
+  }
+}

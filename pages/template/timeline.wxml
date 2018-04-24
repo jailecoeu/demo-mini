@@ -1,0 +1,15 @@
+<template name="timeline">
+    <block wx:for="{{timelines}}" wx:key="">
+        <view class="cd-timeline-block ">
+          <view class='vertical-line'></view>
+          <view class="cd-timeline-img cd-primary"></view> 
+          <view class="cd-timeline-content">
+            <view>{{item.title}}</view>
+            <view class="month"><i class="fa fa-calendar"></i>{{item.date}}</view>
+            <view>{{item.src}}</view>
+            <view>简介：{{item.desc}}</view>
+            <!-- <view class="cd-date"></view> -->
+          </view>
+        </view>        
+    </block>
+</template>

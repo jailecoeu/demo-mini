@@ -1,0 +1,106 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+page{
+  background: #f1f1f1
+}
+.list-item{
+  width: 86%;
+  border: 1px solid #e1e1e1;
+  padding: .8rem;
+  margin: 0 auto;
+  height: 10rem;
+  margin-top: .6rem;
+  margin-bottom: .4rem;
+  position: relative;
+  background: #fff;
+}
+.list-title{
+  font-size: 16px;
+  margin-bottom: .5rem;
+}
+.list-subtitle{
+  font-size: 12px;
+  color: gray;
+  margin-bottom: .5rem;
+}
+.list-thumbs{
+  height: 70px;
+  overflow: hidden;
+}
+.list-thumb{
+  width: 50px;
+  height: 70px;
+  margin-right: 4px;
+}
+.list-discount{
+  height: 70px;
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+  color: gray;
+  font-size: 14px;
+}
+.triangle{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 30px solid green;
+  border-right: 30px solid transparent; 
+}
+.new{
+  position: absolute;
+  top: 1px;
+  left: 3px;
+  font-size: 12px;
+  color: #fff
+}
+.recommed{
+  position: relative;
+  z-index: 1;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #494949;
+  font-size: 16px;
+  font-weight: 500;
+}
+.recommed:before {
+    left: 50%;
+    margin-left: -120px;
+}
+.recommed:after {
+    margin-right: -120px;
+    right: 50%;
+}
+.recommed:after, .recommed:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    width: 70px;
+    height: 1px;
+    background: #e76648;
+    opacity: .3;
+}

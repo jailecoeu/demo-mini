@@ -1,0 +1,11 @@
+/* pages/music/index.wxss */
+.weui-media-box{
+  padding: 10px 15px 10px 15px
+}
+.weui-media-box__title_in-text {
+  margin-bottom: 2px;
+}
+.weui-media-box__desc{
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
