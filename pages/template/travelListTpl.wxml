@@ -1,6 +1,6 @@
 <template name="travelList">
     <block wx:for="{{travels}}" wx:key="1">
-      <view  class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+      <navigator url="{{item.url}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
           <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
               <image class="weui-media-box__thumb" src="{{item.src}}" />
           </view>
@@ -8,6 +8,6 @@
               <view class="weui-media-box__title">{{item.title}}</view>
               <view class="weui-media-box__desc">{{item.content}}</view>
           </view>
-      </view>
+      </navigator>
     </block>
 </template>
